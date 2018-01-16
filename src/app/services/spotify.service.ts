@@ -6,7 +6,7 @@ import 'rxjs/add/operator/map';
 export class SpotifyService {
 
   artistas: any[];
-
+//Prueba  
   constructor(public http: HttpClient) {
     console.log("servicio spotify listo");
   }
