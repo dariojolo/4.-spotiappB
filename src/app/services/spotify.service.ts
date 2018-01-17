@@ -6,16 +6,16 @@ import 'rxjs/add/operator/map';
 export class SpotifyService {
 
   artistas: any[];
-//Prueba  
+//Prueba
   constructor(public http: HttpClient) {
     console.log("servicio spotify listo");
   }
 
-  getArtistas(){
-    let url = 'https://api.spotify.com/v1/search?query=metallica&type=artist&limit=20';
+  getArtistas(termino: string){
+    let url = `https://api.spotify.com/v1/search?query=${termino}&type=artist&limit=20`;
 
     let headers = new HttpHeaders({
-      'authorization': 'Bearer BQDY89pJxswgobsOW_3HTE-Za9Cra-fkSmzExHI3TqcK697VPdmJlrhtwBugLAp0B28vChv-ZqrYtdhX5Mk'
+      'authorization': 'Bearer BQBIFmQP8JriAP1MmcR2u8gBCUjhL_siaCPmI21Yfbn-WSmR3VJNd92pQx5aC3N-OaLCMOMcOl17atmFJaY'
     });
     return this.http.get(url, {headers})
             .map(( resp: any) => {
