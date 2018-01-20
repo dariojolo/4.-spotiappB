@@ -15,7 +15,7 @@ export class SpotifyService {
     let url = `https://api.spotify.com/v1/search?query=${termino}&type=artist&limit=20`;
 
     let headers = new HttpHeaders({
-      'authorization': 'Bearer BQBIFmQP8JriAP1MmcR2u8gBCUjhL_siaCPmI21Yfbn-WSmR3VJNd92pQx5aC3N-OaLCMOMcOl17atmFJaY'
+      'authorization': 'Bearer BQCJfsu3ZNRNhnbPuDQpFPLUl_Uj-RISo5Xx8AxKQOF6QdiXSElvL1dDn-O-0G7TymtKQBWAzw6LoqC08es'
     });
     return this.http.get(url, {headers})
             .map(( resp: any) => {
