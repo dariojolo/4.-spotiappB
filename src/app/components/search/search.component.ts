@@ -16,10 +16,7 @@ termino: string = '';
       return;
     }
     this.spotifyService.getArtistas(this.termino)
-        .subscribe(artistas => {
-            console.log('Informacion lista!');
-            console.log(artistas);
-            });
+        .subscribe();
   }
 
   ngOnInit() {

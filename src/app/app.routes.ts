@@ -9,6 +9,7 @@ const APP_ROUTES: Routes = [ /*Aca vamos agregando las rutas a los components */
   { path: 'home', component: HomeComponent },
   { path: 'search', component: SearchComponent},
   { path: 'artist/:id', component: ArtistComponent},
-  { path: '', redirectTo: '/home', pathMatch: 'full' }
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: '**', redirectTo: 'home', pathMatch: 'full' }
 ];
 export const APP_ROUTING = RouterModule.forRoot(APP_ROUTES, {useHash: true});

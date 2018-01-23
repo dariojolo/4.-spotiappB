@@ -11,6 +11,9 @@ hr{
 .top30{
   margin-top: 30px
 }
+.left10{
+  margin-left: 10px
+}
 .jumbotron{
   background-color: #171717;
 }
@@ -71,4 +74,16 @@ hr{
 
 .fadeIn {
   animation-name: fadeIn;
+}
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+.img-circular{
+    border-radius: 100%;
+}
+.img-50{
+  width: 50px;
 }
